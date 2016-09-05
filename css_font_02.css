@@ -1,0 +1,16 @@
+/* css_font_02_.css */
+html,body{height: 100%;font-size: 100%;font-family: "myriad pro",arial,dotum,sans-serif;}
+
+h1{width: 70%; border-bottom: 1px double #654;margin-left: 15%; text-align: center; }
+
+
+
+.font_01{color: #91c;font-size: 22.4px;font-size: 1.4rem; letter-spacing: 1px; letter-spacing: 0.0625rem;}
+.font_02{color: #19c;word-spacing: 1rem; text-decoration: none;}
+/* text-decoration:none/underline/line-through/over-line ; */
+.font_03{width: 200px;height: 100px;border: 1px solid #9aa; overflow-y: scroll;}
+/* overflow:hidden/scroll/auto ; */
+
+.font_04{width: 200px; height: 100px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+/* white-space: nowrap; 줄바꿈 처리를 하지 않도록 함 
+text-overflow: ellipsis; 말줄임표 사용  */

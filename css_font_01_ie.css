@@ -1,0 +1,15 @@
+
+/* css_font_01_ie.css */
+/* em은 부모기준 rem은 초기값 기준 
+  */
+html, body{font-size: 100%;zoom: 1;}
+
+h1{font-size: 16px;}
+h1>a{font-size: 32px;}
+h1>a>span{font-size: 16px;}
+h1>a>span>em{font-size: 8px;}
+.font_01{font-style: italic;} /*italic normal*/
+.font_02{font-weight: }/*thin light normal bold bolder 100 400 900*/
+.font_03{font-family: "myriad pro",arial,nanumGothic,"돋음",dotum,sans-serif;}/*영문기준 원하는 폰트,다른 대체폰트,한글폰트,대체폰트,형식 (두개 이상의 단어로 되어있는 폰트명은 ""을 표기해서 써야한다) */
+.font_04{}
+.font_05{}
