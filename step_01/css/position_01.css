@@ -1,0 +1,41 @@
+/*bg_01.css*/
+
+html,body{height: 100%;color:#333;}
+html,body,h1,h2,h3,h4,h5,h6,p,pre,div,img,ul,ol,li,dt,dd{margin: 0;padding: 0;border: 0;}
+a{text-decoration:none;color:#777;}
+a:hover{text-decoration:underline;}
+
+ul,ol,li{list-style: none;}
+
+table,tr,td,th,thead,tbody,tfoot{border: 1px solid #777;border-spacing:0; border-collapse: collapse;}
+
+a:focus{outline: 3px solid #fa0; outline-offset: 2px; position:relative; z-index: 1000;}
+.clearfix,.clearfix:after,.clearfix:before{content:""; display: block;clear: both;}
+
+
+body{word-wrap:0;}
+h1 {width: 100%;height: 2rem;border-bottom: 1px solid #0af; margin-bottom: 1rem;text-align: center; line-height: 1;padding-bottom: 0.5rem;
+}
+.wrap {width: 80%;height: 5rem; background-color: #ccf;margin-left: 10%;
+}
+.position {width: inherit; height: 4rem;margin-top: 0.5rem;margin-left: inherit;border: 1px solid #fa0; float: left;
+}
+.position>li{width: 3rem;height: 3rem;border: 3px solid #5aa; float: left;text-align: center;line-height: 3rem; color:#fff; font-weight: bold; list-style:none;}
+.static {background-color: #cc7;
+}
+.fixed {background-color: #7cc;
+}
+.absolute {background-color: #77c;
+}
+.relative {background-color: #c7c;
+}
+.normal {background-color: #7c7;
+}
+
+/*-----------------------------------------------------------------------*/
+body{height: 5000px;}
+.static{position: static; z-index: -1000;top:500px;}  /*static은 z-index top,left등은 작동하지 않음 :가장 기본형의 형태 */
+.fixed{position: fixed;z-index: -1000;top:0; left: 10rem;}
+.absolute {position: absolute;z-index: -1000; top:0; left:5rem;}
+.relative {}
+.normal{}

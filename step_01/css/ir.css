@@ -1,0 +1,32 @@
+/*ir.css*/
+
+html,body{height: 100%;color:#333;}
+html,body,h1,h2,h3,h4,h5,h6,p,pre,div,img,ul,ol,li,dt,dd{margin: 0;padding: 0;border: 0;}
+a{text-decoration:none;color:#777;}
+a:hover{text-decoration:underline;}
+
+ul,ol,li{list-style: none;}
+
+table,tr,td,th,thead,tbody,tfoot{border: 1px solid #777;border-spacing:0; border-collapse: collapse;}
+
+a:focus{outline: 3px; solid #fa0; outline-offset: 2px; position:relative; z-index: 1000;}
+.clearfix,.clearfix:after,.clearfix:before{content:""; display: block;clear: both;}
+
+h1{width: 225px;height: 225px;border: 1px solid #acc; margin:0 auto;}
+h1>a{width: 100%;height: 100%; display: block ; background-color: #777; background-image: url("../classimg/images1.png");  background-repeat:no-repeat; background-position:center center; text-indent: -10em}
+
+/*특정된 class 네임 hidden 에만 숨김처리하는 방법*/
+.hidden{width: 0;height: 0;overflow: hidden;display: block;}
+/*여러개의 링크된 내용안의 숨김처리 해야하는 경우 (ir기법시)*/
+.link a{width: 100%;height: 100%;display:block;}
+.link a>span{width: 0;height: 0;display: block; overflow:hidden;}
+
+
+ul{width: 1024px;height: 204px;float: left; margin: auto; border:1px solid #ccc;}
+ul>li{width: 204px;height: 204px;float: left}
+ul>li>a{width: 204px;height: 204px; display:block;background-repeat: no-repeat;background-position: center;}
+
+.img1>a{background-image: url("../classimg/mush1.jpg");}
+.img2>a{background-image: url("../classimg/mush2.jpg");}
+.img3>a{background-image: url("../classimg/mush3.jpg");}
+.img4>a{background-image: url("../classimg/turtle.jpg");}
