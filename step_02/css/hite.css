@@ -11,12 +11,10 @@
 .langSelect{width: 90px;height: 60px;float: left; color: #fff; font-size: 0.9rem; line-height: 60px;float: right;}
 
 .unb{width: 70px;height: 60px;background-color: #009bde; float: right;}
-/*-------------------------------------------------------------*/
 
 
 /*mainpic-----------------------*/
 .mainpic{width: 960px;height: 400px;background-color: #ccc;}
-/*------------------------------*/
 
 
 /*section-----------------------*/
@@ -29,3 +27,31 @@ ul>li span{display:block; border-bottom: 1px solid #ccc;}
 .sec_04{width: 220px;height: 380px;background-color: #FB4;font-size: 1.5rem; }
 .sec_05{width: 540px;height: 230px;background-color: #001a71;font-size: 1.5rem; }
 .sec_06{width: 380px;height: 230px;background-color: #009bde;font-size: 1.5rem; }
+
+
+/*select------------------------*/
+
+#select{width: 960px;height: 180px;margin: 0;}
+    
+    /*selest button---*/
+    #select button:hover,#select button:focus{background-color:rgba(0,155,222,0.3);outline: 0;}
+    #select button{width: 72px;height: 180px;background-color: transparent;font-size: 4rem;line-height: 180px; background-color: #fff;}
+    .leftBtn{float: left;}
+    .rightBtn{float: right;}
+    
+
+#select>ul{width: 810px;height: 180px;float:left; }
+#select>ul>li{width: 90px;height: 168px;float:left;padding: 0;margin-top: 6px;margin-bottom: 6px;}
+.odd{background-color: #001a71;}
+.even{background-color: #009bde;}
+
+
+/*footer---------------------------------------------*/
+
+#footer{width: 960px;height: 124px;background-color: #111;padding: 40px;}
+#footer>ul>li{float: left;}
+.logo{width: 150px;height: 30px;background-color: #ccc;}
+.familysite{width: 250px;height: 30px;background-color: #ccc;margin: 0;margin-top: 20px;}
+.address{width: auto; height: 30px; float: left;}
+.address>li{float: left;color: #fff;}
+
