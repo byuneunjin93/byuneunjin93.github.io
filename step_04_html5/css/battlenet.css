@@ -1,0 +1,10 @@
+.box{width: 500px;height: 500px; margin: 0 auto; background-color: #999;}
+input{display: block;margin: 20px;}
+select{width: 450px;height: auto;}
+.success{width: 450px;height: auto;}
+.email{width: 450px;height: auto;}
+.pw{width: 200px;height: auto; float: left;}
+.repw{width: 200px;height: auto; float: left;}
+
+.check>input{display: inline;}
+

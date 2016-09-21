@@ -1,0 +1,8 @@
+/*form_02.css*/
+form{width: 350px;height: 400px;background-color: #eee;margin: 0 auto;}
+
+.input{float: left;}
+.login_btn{float: left;}
+.input>li{width: 230px;height: 30px; text-align: left; border: 1px solid #111;margin: 5px;}
+.login_btn{width:100px;height: 80px;}
+.login_btn>li{margin: 0 15px; line-height: 80px;}
