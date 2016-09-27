@@ -1,0 +1,76 @@
+/*hangeul.css*/
+
+.box {width:100%;height: 100%;background-image:url(../img/bg.png);background-size: 100%;background-attachment: fixed;z-index: -1;
+}
+h1{width: 135px;height: 176px;background-image: url(../img/logo.gif);position: fixed;z-index: 100;left: 70px;}
+.box #gnb {width: 100%;height: 50px;background-color: #333;
+position: fixed;z-index: 100;float:left }
+.box #gnb ul{width: 888px;height: 50px;margin: 0 auto;}
+.box #gnb ul>li{width: auto;height: 50px;float: left;font-size: 1.25rem;color: #fff;line-height: 50px;margin-right: 110px;}
+.box #gnb ul>li:last-child{margin: 0;}
+/*index*/
+div{font-size: 1.25rem;color: #fff;font-weight: 200;}
+.box #index {width: 888px;height: 100%;margin: 0 auto;padding-top: 100px;
+}
+.box #index>div{float: left;}
+.box #play {width: 584px;height: 326px;background-color: #456;margin-right: 20px;}
+.box #aboutHangeul {width: 264px;height: 326px;
+}
+.box #aboutHangeul>div{float: left;}
+
+.box .study {width: 136px;height: 326px;margin-right: 20px; background-image:url(../img/sejong_dark.png); line-height: 326px;
+}
+.box .hunmin {width: 108px;height: 158px;margin-bottom: 20px;background-image: url(../img/hunmin_dark.png); line-height: 158px;
+}
+.box .grammar {width: 108px;height: 158px; background-image: url(../img/question_dark.png);line-height: 158px;
+}
+.box #promotion {
+}
+.box .infoIcon {
+}
+.box .joinIcon {
+}
+.box .mylistIcon {
+}
+.box #service {
+}
+.box .mapIcon {
+}
+.box .timeIcon {
+}
+.box .promotion {
+}
+.box .promotion h2 {
+}
+.box .info {
+}
+.box .join {
+}
+.box .mylist {
+}
+.box .mylist li {
+}
+.box .service {
+}
+.box .service h2 {
+}
+.box .service ul {
+}
+.box .map {
+}
+.box .title {
+}
+.box .title li {
+}
+.box .text {
+}
+.box .text li {
+}
+.box #footer {
+}
+.box .footerlogo {
+}
+.box .address {
+}
+.box .select {
+}
