@@ -1,76 +1,81 @@
 /*hangeul.css*/
-
-.box {width:100%;height: 100%;background-image:url(../img/bg.png);background-size: 100%;background-attachment: fixed;z-index: -1;
+body{background-color: transparent;background-image:url(../img/bg.png);background-size: 100%;background-attachment: fixed;z-index: -1;}
+.box {width:100%;height: 100%;
 }
-h1{width: 135px;height: 176px;background-image: url(../img/logo.gif);position: fixed;z-index: 100;left: 70px;}
+h1{width: 135px;height: 176px;background-image: url(../img/logo.gif);position: fixed;z-index: 100;left:50%;margin-left: -700px;}
 .box #gnb {width: 100%;height: 50px;background-color: #333;
 position: fixed;z-index: 100;float:left }
 .box #gnb ul{width: 888px;height: 50px;margin: 0 auto;}
-.box #gnb ul>li{width: auto;height: 50px;float: left;font-size: 1.25rem;color: #fff;line-height: 50px;margin-right: 110px;}
+.box #gnb ul>li{width: auto;height: 50px;float: left;color: #fff;line-height: 50px;margin-right: 120px;font-weight: bold;}
 .box #gnb ul>li:last-child{margin: 0;}
 /*index*/
-div{font-size: 1.25rem;color: #fff;font-weight: 200;}
-.box #index {width: 888px;height: 100%;margin: 0 auto;padding-top: 100px;
+.box #index {width: 868px;height: 100%;margin: 0 auto;padding-top: 10%;
 }
-.box #index>div{float: left;}
-.box #play {width: 584px;height: 326px;background-color: #456;margin-right: 20px;}
-.box #aboutHangeul {width: 264px;height: 326px;
+.box #index div{font-size: 1.25rem;color: #fff;float: left;font-weight: bold;}
+.box #play {width: 584px;height: 336px;background-color: #111;margin-right: 20px;}
+.box #aboutHangeul {width: 264px;height: 336px;
 }
-.box #aboutHangeul>div{float: left;}
+.box #aboutHangeul>div{ white-space: pre-line;float: left;}
 
-.box .study {width: 136px;height: 326px;margin-right: 20px; background-image:url(../img/sejong_dark.png); line-height: 326px;
+.box .study {width: 136px;height: 336px;margin-right: 20px; background-image:url(../img/sejong_dark.png); box-sizing: border-box;padding: 100px 0;
 }
-.box .hunmin {width: 108px;height: 158px;margin-bottom: 20px;background-image: url(../img/hunmin_dark.png); line-height: 158px;
+.box .hunmin {width: 108px;height: 158px;margin-bottom: 20px;background-image: url(../img/hunmin_dark.png);box-sizing: border-box;padding: 40px 0; 
 }
-.box .grammar {width: 108px;height: 158px; background-image: url(../img/question_dark.png);line-height: 158px;
+.box .grammar {width: 108px;height: 158px; background-image: url(../img/question_dark.png);
+box-sizing: border-box;padding: 40px 0;}
+.box #promotion {width: 584px;height: 286px;margin-top: 20px;margin-right: 20px;}
+.box #promotion>div {float: left;white-space: pre-line;float: left;
 }
-.box #promotion {
+.box .infoIcon {width: 360px;height: 296px;background-image: url(../img/promotionIcon.png);margin-right: 20px;
 }
-.box .infoIcon {
+.box .joinIcon {width: 204px;height: 138px;background-color: #6D0F43;box-sizing: border-box;padding: 20px 0;
 }
-.box .joinIcon {
+.box .mylistIcon {width: 204px;height: 138px;background-image: url(../img/list_dark.png);box-sizing: border-box;padding: 20px 0;margin-top: 20px;
 }
-.box .mylistIcon {
+.box #service {width: 254px;height: 296px;margin-top: 20px;	
 }
-.box #service {
+.box #service>div {float: left;white-space: pre-line;float: left;}
+
+.box .mapIcon {width: 264px;height: 138px;background-image: url(../img/mapicon_dark.png);
+	box-sizing: border-box;padding: 54px 0;
 }
-.box .mapIcon {
+.box .timeIcon {width: 264px;height: 138px;background-image: url(../img/number.png);margin-top: 20px;
 }
-.box .timeIcon {
+.box .promotion {width: 868px;height: auto;margin: 0 auto;
 }
-.box .promotion {
+.box .promotion h2 {margin-bottom: 20px; background-color: rgba(10,10,10,0.4);
 }
-.box .promotion h2 {
+.box .info {width: 848px;height: 1136px;background-image: url(../img/promotion.jpg);margin: 0 auto;border: 10px solid #fff;
 }
-.box .info {
+.box .join {width: 200px;height: 50px;background-color: #6D0F43;margin: 0 auto;margin-top: 40px;color: #fff;font-weight: bold;font-size: 1.5rem;box-sizing: border-box;padding:14px; margin-bottom: 70px;}
+.box .mylist {width: 868px;height: 120px;background-color: rgba(0,0,0,0.5);box-sizing: border-box;padding: 33px;overflow-y: scroll;margin-top: 70px;
 }
-.box .join {
-}
-.box .mylist {
-}
-.box .mylist li {
-}
-.box .service {
+.box .mylist ul{width: 800px;height:30px;}
+.box .mylist .title{float: left;color: #fff;}
+.box .mylist ul button{width: 50px;height: 20px;float: right;font-size: 0.75rem;margin-left: 10px;}
+	.box .mylist .del{background-color: #fff;float: right;color: #6d0f46;}
+	.box .mylist .edit{background-color: #6d0f46;float: right;color: #fff;}
+/*service*/
+.box .service {width: 868px;height: 700px;background-color: rgba(255,255,255,0.9);box-sizing: border-box;padding: 44px; margin-top: 50px; margin: 0 auto;
 }
 .box .service h2 {
 }
-.box .service ul {
+
+.box .map {width: 780px;height: 408px;background-image: url(../img/map.jpg);border: 2px solid #333;
 }
-.box .map {
+.box .info_title {width: 150px;height: 120px;float: left;}
+.box .info_title li{color: #6d0f43;height: 40px;text-align: left;font-weight: bold;margin-bottom: 10px; line-height: 40px;font-size: 0.9rem;}
+.service_info{width: 600px;height: 120px;margin: 40px auto;}
+.box .info_text {width: 450px;height: 120px;float: left;}
+.box .info_text li{color: #111;height: 40px;text-align: left;margin-bottom: 10px; font-size: 0.85rem; line-height: 40px }
+
+
+.box #footer {width: 100%;height: 100px;background-color:rgba(0,0,0,0.3);
 }
-.box .title {
+.box #footer .footer{width:868px;height: 100px; margin: 0 auto;border-top: 1px solid #fff}
+.box #footer .footer div{float: left;}
+.box .footerlogo {width: 96px;height: 74px;background-image: url(../img/footerlogo.png);}
+.box .address {width: 642px;height: 100px;white-space: pre;font-size: 0.75rem;text-align: left;box-sizing: border-box;padding-left: 10px;padding-top: 10px;color: #fff;
 }
-.box .title li {
-}
-.box .text {
-}
-.box .text li {
-}
-.box #footer {
-}
-.box .footerlogo {
-}
-.box .address {
-}
-.box .select {
+.box .select {width:130px;height: 20px;float: left;margin-top: 54px;
 }
