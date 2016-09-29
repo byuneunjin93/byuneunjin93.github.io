@@ -16,6 +16,7 @@ button, input[type="button"]{cursor: pointer; border:0;}
 a:focus, input:focus, button:focus, textarea:focus, select:focus{
 	outline:2px solid #fa0; outline-offset:3px; position:relative; z-index:1000;}
 
+a{text-decoration: none;}
 /* common.css */
 
 .clearfix{content: ""; display: block; clear: both;}
