@@ -5,6 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/hangeul.css">
+	 <script language="javascript">
+        function join_popup(){window.open("join_popup.html","join", "width=350px, height=450px, left=650px, top=300px"); }
+     </script>
 	<title>hangeul</title>
 </head>
 <body>
@@ -42,10 +45,9 @@ html" target="_blank"><div class="hunmin">
 			</div>
 			<div id="promotion">
 				<a href="#promotion_move"><div class="infoIcon"><span class="hidden">행시 짓기 프로모션 안내 배너</span></div></a>
-				<a href="#join_move"><div class="joinIcon">
-						프로모션<br />
-						참여하기
-					</div></a>
+				
+				<input class="joinIcon" type="button" value="프로모션 참여하기" onclick="join_popup();" />
+					
 				<a href="#join_move"><div class="mylistIcon">
 						나의 참여글<br />
 						   보기
@@ -64,7 +66,7 @@ html" target="_blank"><div class="hunmin">
 			<span class="hidden"><div id="promotion_move"></div></span>
 			<div class="info"><span class="hidden">한글날에 관련한 단어행시 짓고 선물받자</span></div>
 			    <span class="hidden"><div id="join_move"></div></span>
-				<button type="button" class="join">참여하기</button>
+				<button type="button" class="join" onclick="join_popup();">참여하기</button>
 				
 			
 			<h2>나의 참여내역</h2>

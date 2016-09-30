@@ -1,0 +1,21 @@
+/*responsiv_01_02.css*/
+
+/*
+mob_v:480px;
+mob_h:640px;
+tab_v:768px;
+tab_h:102px;
+pc:1024px(min);
+pcfull:1280(min);*/
+
+
+@media screen and (max-width:640px) {}
+@media screen and (min-width:641px) and (max-width: 1023;) {} 
+@media screen and (min-width:1024px) {}
+
+/*주의사항:
+
+단위:px단위는 사용하지 않는다
+
+
+*/
