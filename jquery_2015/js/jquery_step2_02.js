@@ -8,6 +8,9 @@
 		var banner_div = $('.banner').children('div');
 		banner_div.hide();
 		banner_div.eq(i).stop().slideDown();
+		
+		$('태그명').toggleClass.('showbox');
+		$('.showbox').slideDown();
 	});
 
 	// $('.banner').children('div').last().slideDown();
