@@ -1,0 +1,54 @@
+//scss의 고유 주석이기때문에 css로 변환되지않는다.
+/*css로 변환가능한 주석처리 */
+
+$color_list: #145,#579,#058,#961,#fc1;
+$font_size:12,16,10,8,17;
+
+@mixin list($a){
+		
+	@each $current in $a{
+	$i:index($a,$current); //index는 $color-list의 값을 순서대로 하나씩 불러와 i에 넣는다.
+	
+		&:nth-child(#{$i}){
+			list-style: none;
+			background-color:$current;
+			}
+	}
+	
+	
+}
+
+$main_color:#333;
+
+$line_color:#af0;
+
+body{background-color: $main_color; border-top: 1px solid $line_color;}
+
+#wrap{
+	>ul{width: 100px;height: auto;background-color: #fff;
+		
+		>li{@include list($color_list);}
+		}
+	}
+
+
+
+//$color_list: #145,#579,#058,#961,#fc1;
+//$font_size:12,16,10,8,17;
+//@each $current in $color_list {
+//	$i:index($color-list,$current); //index는 $color-list의 값을 순서대로 하나씩 불러와 i에 넣는다.
+//	
+//	li:nth-child(#{$i}){
+//		background-color:$current;
+//	}
+//	
+//}
+//
+//@each $size in $font_size {
+//	$z:index($font_size,$size); //index는 $color-list의 값을 순서대로 하나씩 불러와 i에 넣는다.
+//	
+//	li:nth-child(#{$z}){
+//		font-size:$size+px;
+//	}
+//	
+//}

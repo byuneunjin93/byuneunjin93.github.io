@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="./reset.css">
+	<link rel="stylesheet" href="./confirm.css">
+	<title>Document</title>
+</head>
+<body>
+	<div id="confirm_box">
+		<h2><span>본인 인증 서비스</span></h2>
+		
+		<div class="box2">
+			<h3>휴대폰 인증</h3>
+			<p>입력하시는 정보는 암호화되어 처리되며,<br />어떠한 비용도 발생하지 않습니다.</p>
+		
+			<form action="">
+				<div class="confirm">
+				<span class="hidden"><legend>휴대폰인증</legend></span>
+					<dl class="number">
+						<dt><label for="mfirst">휴대폰 번호</label></dt>
+						<dd>
+						<select name="mfirst" id="mfirst">
+							<option value="010">010</option>
+							<option value="011">011</option>
+							<option value="012">012</option>
+							<option value="013">013</option>
+							<option value="014">014</option>
+							<option value="015">015</option>
+							<option value="016">016</option>
+							<option value="017">017</option>
+							<option value="018">018</option>
+							<option value="019">019</option>
+							<option value="0505">0505</option>
+							
+							
+						</select>				
+						</dd>
+						<dd><input type="tel" id="msecond" name="msecond" value="" /></dd>
+						<dd><input type="tel" id="mlast" name="mlast" value="" /></dd>
+						
+					</dl>
+					<dl class="mobile_select">
+						<dt><label for="skt">이동 통신사</label></dt>
+						<dd><input type="radio" name="mobile" id="skt" value="" />
+						<label for="skt">SKT</label></dd>
+						<dd><input type="radio" name="mobile" id="kt" value="" />
+						<label for="kt">KT</label></dd>
+						<dd><input type="radio" name="mobile" id="lg" value="" />
+						<label for="lg">LGU&#43;</label></dd>
+					</dl>
+					
+				</div>
+				<div class="check">
+					<input type="checkbox" name="check" id="checkbox" value="" />
+					<label for="checkbox">개인 정보 제공 및 활용에 동의합니다</label>
+				</div>
+			</form>
+		</div>
+			
+		<form action="">	
+			<input type="submit" name="yes" id="yes" value="확인" />
+			<input type="reset" name="no" id="no" value="취소" />
+		</form>
+	</div>
+	
+</body>
+</html>

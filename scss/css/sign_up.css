@@ -1,0 +1,13 @@
+.box .box1 {
+  width: 420px;
+  height: 400px;
+  background-color: #bde848;
+  font-family: dotum;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.box .box2 {
+  width: 300px;
+  height: 400px;
+}
