@@ -1,0 +1,25 @@
+/*tab.css*/
+
+@media screen and (min-width:600px) and (max-width:1023px){
+		
+	#head_box{width: 100%;height:auto;box-sizing: border-box;padding: 0.75rem; background-color: #222;}
+	
+	#head_box h1 {
+	}
+	
+	#head_box .unb {
+	}
+	#head_box h2 {
+	}
+	#head_box button {
+	}
+	#head_box button .fa {
+	}
+	#head_box button .fa#head_box button .hidden {
+	}
+	#head_box button .fa {
+	}
+	#head_box button .fa#head_box button .fa {
+	}
+	#head_box button .fa
+}

@@ -1,0 +1,54 @@
+/* mob.css */
+@media screen and (max-width: 37.44rem){
+	
+/*	header*/
+	
+	#head_box{width: 100%;height:auto; box-sizing: border-box;padding: 0.75rem; background-color: #222;position: relative;}
+	#head_box h1{width: 74px;height: 34px; float: left;position: absolute;z-index: 100;margin-left: 50vw;left: -35px;}
+	#head_box h1>a{display: block; width: 100%; height: 100%; background-image: url(../../img/logo.png); background-repeat:no-repeat; background-size:120%;	background-position:center; float: left}
+	#head_box .unb{width: 100%;}
+	#head_box .menu{ float: left; font-size: 1.5rem;}
+	#head_box .cart{ float: right; font-size: 1.5rem; margin-right: 3.75vw;}
+	#head_box .my{ float: right; font-size: 1.5rem;background-color:transparent;}
+	#head_box button{background-color: transparent;}
+
+	
+/*	section*/
+	
+	#add_banner{width: 100vw;min-height:12.5rem; height:55.55555vw;background-color: #000;position:relative; }
+	#add_banner .banner_btn{position: absolute;top: 50%;}
+	#add_banner .left_btn{left: 0;}
+	#add_banner .right_btn{right: 0;}
+	#add_banner #banner_box>ul{}
+	#add_banner #banner_box>ul>li{}
+	
+/*	article item*/
+	
+	#item { width: 100%;min-height: 300px;height: 83.33333vw;box-sizing: border-box;padding:13.8888vw 0;  background-color: #692;
+	}
+	#item>div{width: 100%;min-height: 200px;height: 55.5555vw;background-color: #fff;overflow: hidden;}
+	#item ul {float: left;min-width: 98px; width: 27.77777vw;min-height: 200px;height: 55.5555vw;background-color: #a92;margin: 0;padding: 0;
+	}
+	#item li {
+	}
+	
+/*	article content*/
+	#content {
+	}
+	#content li {float: left;width: 50%;min-height: 120px;height: 33.333333vw;background-color: #642;margin: 0;padding: 0;box-sizing: border-box;border: 1px solid #fff;}
+	#content>ul>li{width:calc(100%/3);}
+	
+
+/*	footer*/
+	
+	footer {width: 100%;height: auto;box-sizing: border-box;padding: 4vw; background-color: #000; color: #fff;
+	}
+	footer address {
+	}
+	footer address a {
+	}
+	footer h3{width: 100%;height: auto;}
+	footer h3 a {display: block; float: left; margin-right: 3vw;
+	}
+	
+}
