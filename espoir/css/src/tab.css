@@ -4,14 +4,13 @@
 	
 	
 /*	header*/
-	#head_box{width: 100%;height:auto; box-sizing: border-box;padding: 0.75rem; background-color: #222;position: fixed;z-index: 100}
-	#head_box h1{width: 74px;height: 34px; float: left;position: absolute;z-index: 100;margin-left: 50vw;left: -35px;}
-	#head_box h1>a{display: block; width: 100%; height: 100%; background-image: url(../../img/logo.png); background-repeat:no-repeat; background-size:120%;	background-position:center; float: left}
-	#head_box .unb{width: 100%;}
+	#head_box{width: 100%;}
+	#head_box h1{float: left;position: absolute;z-index: 100;margin-left: 50vw;left: -35px;}
+	
+	
 	#head_box .menu{ float: left; font-size: 1.5rem;}
 	#head_box .cart{ float: right; font-size: 1.5rem; margin-right: 3.75vw;}
 	#head_box .my{ float: right; font-size: 1.5rem;}
-	#head_box button{background-color: transparent;}
 	
 	
 /*	section video*/
@@ -19,53 +18,37 @@
 		
 /*	section banner*/
 	
-	#add_banner{width: 100vw;min-height:12.5rem; height:55.55555vw;background-color: #000;position:relative; }
-	#add_banner .banner_btn{position: absolute;top: 50%;}
-	#add_banner .left_btn{left: 0;}
-	#add_banner .right_btn{right: 0;}
+	#add_banner{min-height:12.5rem; height:55.55555vw;background-color: #000;position:relative; }
+
+	
 	#add_banner #banner_box>ul{}
 	#add_banner #banner_box>ul>li{}
 	
 /*	article item*/
 	
-	#item { width: 100%;height:300px;box-sizing: border-box;padding:4rem 0;  background-color: #692;
-	}
-	#item>div{width: 100%;height: 160px;background-color: #fff;overflow: hidden;}
-	#item ul {float: left;min-width: calc(100% / 4); width: calc(100vw / 4 / 360 * 100);height:inherit;background-color: #a92;margin: 0;padding: 0.94rem; box-sizing: border-box;
-	}
-	#item li {
-	}
+	#item ul {min-width: calc(100% / 4); width: calc(100vw / 4 / 360 * 100);}
 /*	article content*/
-	#content {
-	}
-	#content li {float: left;width: 25%;min-height: 210px;height: 25vw;background-color: #642;margin: 0;padding: 0;box-sizing: border-box;border: 1px solid #fff;}
-	#content .finder li{width:calc(100%/3);}
-	#content .brand_store li{width:50%;}
+	
+	.content li {width: 25%;height: 25vw;font-size: 5vw;}
+	.content span{ margin-top: 25%;}
+	#content_02 li{width:calc(100%/3);}
+	#content_03 li{width:50%;}
+	#content_03 li>span{margin-top: 15%}
+	
+	#content_01 li:nth-child(1){;background-image: url('../../img/main/tab/everydaymakeup.png')}
+	#content_01 li:nth-child(2){background-image: url('../../img/main/tab/eyebrowbar.png')}
+	#content_01 li:nth-child(3){background-image: url('../../img/main/tab/lastchance.png')}
+	#content_01 li:nth-child(4){background-image: url('../../img/main/tab/eyemix.png')}
+	#content_02 li:nth-child(1){background-image: url('../../img/main/tab/foundation.png')}
+	#content_02 li:nth-child(2){background-image: url('../../img/main/tab/color.png')}
+	#content_02 li:nth-child(3){background-image: url('../../img/main/tab/brush.png')}
+	#content_03 li:nth-child(1){background-image: url('../../img/main/tab/brand.png')}
+	#content_03 li:nth-child(2){background-image: url('../../img/main/tab/store.png')}
 	
 
 /*	footer*/
 	
-	footer {width: 100%;height: auto;box-sizing: border-box;padding: 4vw; background-color: #000; color: #fff;
-	}
-	footer address {
-	}
-	footer address a {
-	}
-	footer h3{width: 100%;height: auto;}
-	footer h3 a {display: block; float: left; margin-right: 3vw;
-	}
-	/*	footer*/
-	
-	footer {width: 100%;height: auto;box-sizing: border-box;padding: 4vw; background-color: #000; color: #fff;
-	}
-	footer address {
-	}
-	footer address a {
-	}
-	footer h3{width: 100%;height: auto;}
-	footer h3 a {display: block; float: left; margin-right: 3vw;
-	}
-}
+
 
 
 	

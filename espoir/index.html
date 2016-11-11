@@ -15,7 +15,7 @@
 		<!--base_css-->
 		<link rel="stylesheet" href="./css/src/base.css">
 		<!--320~599-->
-		<link rel="stylesheet" href="./css/src/mob.css.">
+		<link rel="stylesheet" href="./css/src/mob.css">
 		<!--600~1023-->
 		<link rel="stylesheet" href="./css/src/tab.css">
 		<!--1024~-->
@@ -56,91 +56,67 @@
 			</nav>
 		</header>
 			
-		<section class=".cf_box">
+		<section class="cf_box">
+		<section class="dark"></section>
 		<video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
       	<source src="./espoir_cf.mp4"></video>
 		</section>
-		
-		<section class="empty"></section>
-		
+	
 		<section id="add_banner">
 			<h2 class="hidden">광고배너영역</h2>
 			
 			<div class="banner_btn left_btn"><button type="button"><i class="fa fa-angle-left" aria-hidden="true"></i><span class="hidden">left</span></button></div>
-			<div class="banner_btn right_btn"><button type="button"><i class="fa fa-angle-right" aria-hidden="true"></i><span class="hidden">right</span></button></div>
+			
+			<div class="banner_btn right_btn"><button type="button"><i class="fa fa-angle-right" aria-hiddeen="true"></i><span class="hidden">right</span></button></div>
 			<div id="banner_box">
 				<ul>
-					<li>광고배너_01</li>
-					<li>광고배너_02</li>
-					<li>광고배너_03</li>
-					<li>광고배너_04</li>
+					<li class="banner_01">광고배너_01</li>
+					<li class="banner_02">광고배너_02</li>
+					<li class="banner_03">광고배너_03</li>
+					<li class="banner_04">광고배너_04</li>
 				</ul>
 				
 			</div>
 		</section>
 		
+		
 		<article id="item">
-			<div>
-				<ul>
-					<li>item_01</li>
-					<li>에스쁘아 듀이 페이스 모닝</li>
-					<li>28,000</li>
-				</ul>
-				<ul>
-					<li>item_02</li>
-					<li>에스쁘아 무디 블러디</li>
-					<li>19,000</li>
-				</ul>
-				<ul>
-					<li>item_03</li>
-					<li>에스쁘아 무디 블러디 프로</li>
-					<li>16,000</li>
-				</ul>
-				<ul>
-					<li>item_04</li>
-					<li>에스쁘아 무디 블러디 얼티밋</li>
-					<li>22,000</li>
-				</ul>
-				<ul>
-					<li>item_05</li>
-					<li>에스쁘아 꾸뒤를 글로시 라커</li>
-					<li>15,000</li>
-				</ul>
-			</div>
 		</article>
-		<article>			
-			<ul id="content" class="clearfix">
-				<li>EVERYDAY<br /> MAKEUP</li>
-				<li>EYEBROW<br /> BAR</li>
-				<li>LAST<br /> CHANCE</li>
-				<li>EYEMIX <br />MATCH</li>
-				<ul class="finder">
-					<li>FOUNDATION<br /> FINDER</li>
-					<li>COLOR <br />FINDER</li>
-					<li>BRUSH <br />FINDER</li>
-				</ul>
-				<ul class="brand_store">
-					<li>BRAND <br />STORY</li>
-					<li>STORE</li>
-				</ul>
+		
+		
+		<article class="content clearfix">			
+			<ul id="content_01" class="clearfix">
+				<li><span>EVERYDAY<br /> MAKEUP</span></li>
+				<li><span>EYEBROW<br /> BAR</span></li>
+				<li><span>LAST<br /> CHANCE</span></li>
+				<li><span>EYEMIX <br />MATCH</span></li>
+			</ul>
+			<ul id="content_02" >
+				<li><span>FOUNDATION<br /> FINDER</span></li>
+				<li><span>COLOR <br />FINDER</span></li>
+				<li><span>BRUSH <br />FINDER</span></li>
+			</ul>
+			<ul id="content_03">
+				<li><span>BRAND <br />STORY</span></li>
+				<li><span>STORE</span></li>
 			</ul>
 		</article>
 		
 		
 		<footer >
-			<address>고객상담:080-619-8888
-			월~금 09:00~18:00(토/일/공휴일 휴무)
-			이메일:espoirmail@espoir.com </address>
+			<h3>고객상담:080-619-8888  월~금 09:00~18:00(토/일/공휴일 휴무)<br />
+				이메일:espoirmail@espoir.com </h3>
 			
-			<h3 class="clearfix">
+			<h4 class="clearfix">
 				<a href="#">서비스이용약관</a>
 				<a href="#">개인정보취급방침</a>
-			</h3>
+			</h4>
 			
 			<address>ⓒ2015 eSporir. All Right Reserved.</address>
 		</footer>
 	
-		
+		<script src="js/src/slide_banner.js"></script>
+		<script src="js/src/slide_best.js"></script>
 	</body>
 
 </html>

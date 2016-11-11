@@ -1,59 +1,59 @@
 /*pc.css*/
 @media screen and (min-width:1024px){
 	
-	body{background-color: transparent;}	
-	/*	header*/
 	
-	#head_box{min-width: 7.5rem;width:8.453125vw ; height:auto; box-sizing: border-box;padding: 0.75rem; background-color: #222;position:fixed; z-index: 100;transition: 0.1s top: 0;left: 0;}
-	#head_box h1{width: 74px;height: 34px; float: right;}
-	#head_box h1>a{display: block; width: 100%; height: 100%; background-image: url(../../img/logo.png); background-repeat:no-repeat; background-size:120%;	background-position:center; float: left}
-	#head_box .unb{width: 100%;}
+	/*	header*/
+	#head_box{min-width: 7.5rem;width:8.453125vw ;transition: 0.1s}
+	#head_box h1{float: right;}
+	
 	#head_box .menu{ float: left; font-size: 1.5rem;}
 	#head_box .cart{ display:none;}
 	#head_box .my{display:none;}
-	#head_box button{background-color: transparent;}
+	
 
 /*	section_video*/
-	.cf_box{position: fixed;top: 0;width: 100vw;height: 100vh; z-index: -100;overflow: hidden;
-		background-color: #000;}
-	#video {position: absolute;width: 100%; height:auto; overflow: hidden; top: 0;}
+	.cf_box{position: fixed;top: 0;width: 100%;height: 100%; z-index: -100;overflow: hidden;background-color: #000;}
+	.dark{position: absolute;width: 100%;height: 100%;margin-top: 0;margin-left: 0;background-color: rgba(0,0,0,0.3);z-index: 100}
+	#video {position: absolute;min-width: 120rem;width: 100vw;height: auto;top: 0;left: 0;overflow: hidden;
+	}
 	
-	.empty{display: block;width: 100%;height:  calc(100vh - 3rem); }
+
 
 /*	section banner*/
 	
-	#add_banner{width: 100vw;min-height:200px; height:12.5vw;background-color: #000;position:relative; z-index: 0;}
-	#add_banner .banner_btn{position: absolute;top: 50%;}
-	#add_banner .left_btn{left: 0;}
-	#add_banner .right_btn{right: 0;}
+	#add_banner{min-height:200px; height:12.5vw;background-color: #000;position:relative; z-index: 0;margin-top: 100vh;}
+
 	#add_banner #banner_box>ul{}
 	#add_banner #banner_box>ul>li{}
 	
 /*	article item*/
 	
-	#item { width: 100%;height:300px;box-sizing: border-box;padding:4rem 0;  background-color: #692;
-	}
-	#item>div{width: 100%;height: 160px;background-color: #fff;overflow: hidden;}
-	#item ul {float: left;min-width: calc(100% / 5); width: calc(100vw / 5 / 360 * 100);height:inherit;background-color: #a92;margin: 0;padding: 0.94rem; box-sizing: border-box;
-	}
-	#item li {
-	}
+	
+	#item ul {min-width: calc(100% / 5); width: calc(100vw / 5 / 360 * 100);}
+	
 	
 	/*	article content*/
-	#content {
-	}
-	#content li {float: left;width: 25%;min-height: 210px;height: 25vw;background-color: #642;margin: 0;padding: 0;box-sizing: border-box;border: 1px solid #fff;}
-	#content .finder li{width:20%;}
-	#content .brand_store li{width:20%;}
+
+	.content li {width: 25%;height: 20.5vw;font-size: 3vw;}
+	.content span{display: block; margin-top: 25%;}
+	
+	#content_02 ul{float: left;width:60%;}
+	#content_02 li{width:20%;}
+	#content_02 li>span{margin-top: 28%;}
+	#content_03 ul{float: left;width:40%;}
+	#content_03 li{ width:20%;}
+	#content_03 li>span{margin-top: 30%;}
+	
+	#content_01 li:nth-child(1){background-image: url('../../img/main/pc/everydaymakeup.png')}
+	#content_01 li:nth-child(2){background-image: url('../../img/main/pc/eyebrowbar.png')}
+	#content_01 li:nth-child(3){background-image: url('../../img/main/pc/lastchance.png')}
+	#content_01 li:nth-child(4){background-image: url('../../img/main/pc/eyemix.png')}
+	#content_02 li:nth-child(1){background-image: url('../../img/main/pc/foundation.png')}
+	#content_02 li:nth-child(2){background-image: url('../../img/main/pc/color.png')}
+	#content_02 li:nth-child(3){background-image: url('../../img/main/pc/brush.png')}
+	#content_03 li:nth-child(1){background-image: url('../../img/main/pc/brand.png')}
+	#content_03 li:nth-child(2){background-image: url('../../img/main/pc/store.png')}
+	
 	/*	footer*/
 	
-	footer {width: 100%;height: auto;box-sizing: border-box;padding: 4vw; background-color: #000; color: #fff;
-	}
-	footer address {
-	}
-	footer address a {
-	}
-	footer h3{width: 100%;height: auto;}
-	footer h3 a {display: block; float: left; margin-right: 3vw;
-	}
-}
+	
