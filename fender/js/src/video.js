@@ -2,9 +2,9 @@
 
 $(function() {
 
-var left = $('.l_btn');
-var right = $('.r_btn');
-var box = $('.video>ul');
+var left = $('.leftBtn');
+var right = $('.rightBtn');
+var box = $('#videoBox>ul');
 
 left.on('click',function() {
 	
