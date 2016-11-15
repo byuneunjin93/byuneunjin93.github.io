@@ -1,46 +1,116 @@
 body{overflow-x: hidden;background-color:#171B1E}
-#videoBox{ width: 100vw;height: 100vh;}
-#videoBox ul{width: 80%;height: 50%;position: relative; transition: 1s; overflow:hidden;margin: 0 auto;margin-top: 15%;}
-#videoBox ul li{position: absolute;text-align: center; transition:1s; background-repeat: no-repeat; transition: 0.5s; overflow: hidden;}
 
+/*header-----------*/
+.content{width: 100%; height: auto;}
+	#headBox{width: 100%; height: 80px; box-sizing:border-box; position: absolute;z-index:500;top:0; left: 0;}
+	#headBox.fix{position: fixed; top: 0}
 
-.btn{width: auto; height:auto;	background-color:transparent;
-		position: absolute; top: 50%; margin-top: -2rem;z-index: 5000 }
+	h1{width: 164px; height: 64px; margin-left:40px;margin-top:10px;float: left;background-image:url("../../img/fender_logo.png");background-repeat:no-repeat;background-position:center;margin-top:42px;margin-left:64px;transition:all 0.3s;}
+	h1:hover{transform:scale(1.2);}
+		h1>a{display: block;width:100%; height: 100%;text-align: center; line-height: 2rem;font-size: 2rem;}
 
+	
+	#menu{width: 60px;	height: 44px;
+		float: right; right: 1rem;
+		margin-right:44px;
+		margin-top:42px;
+		}
+	#menu>button{width: 100%; height: 100%;
+		font-size: 1.5rem; transition: 0.3s;
+		background-image:url("../../img/menu_icon.png");
+		background-repeat:no-repeat;
+		background-position:center;background-color:transparent;}
+	#menu>button:hover{transform:scale(1.2);}
+
+/*-----------------*/
+
+#videoBox{ width: 100vw;height: 50vh;}
+
+/*btn-----------------*/
+.btn{width: auto; height:auto;	background-color:transparent; position: absolute; top: 50%; margin-top: -2rem;z-index: 5000 }
 .btn>button{width: 100%; height: 100%; font-size:4rem; font-weight: bold;background-color:transparent; color: #fff;}
-
 .leftBtn{left:5rem;}
 .rightBtn{right:5rem;}
 
-/*.dark{width: 80%;height: 54.5%;margin: 0 10%;position: absolute;background-color: rgba(0,0,0,0.5);z-index: 350}*/
-
-li::after{content: " ";display: block; width: 100%;height: 100%;position: absolute;background-color: rgba(0,0,0,0.8); transition:all 0.3s; z-index: 350; top: 0;left: 0;transition-timing-function: linear}
-li{width: auto;height: auto;transition:all 1s;top: 50%}
-li img{transition:all 0.3s;transition-timing-function: linear;height: auto;}
+/*video---------------*/
+#videoBox ul{width: 80%;height: inherit;position: relative; transition: 1s; overflow:hidden;margin: 0 auto;margin-top: 15%;}
+#videoBox ul li{width: auto;height: auto;transition:all 1s;top: 45%;position: absolute;text-align: center; transition:1s; background-repeat: no-repeat; transition: 0.5s; }
 
 
-li:nth-child(1){left: 10%; z-index:100;margin-top:-9%}
-li:nth-child(1) img{width: 500px;}
-
-li:nth-child(2){left: 0; z-index:200;margin-top:-11%}
-li:nth-child(2) img{width: 600px;}
-
-li:nth-child(3){left: 10%; z-index:300;margin-top:-13%}
-li:nth-child(3) img{width: 700px;}
+#videoBox li::after{content: " ";display: block; width: 100%;height: 100%;position: absolute;background-color: rgba(0,0,0,0.8); transition:all 0.3s; z-index: 350; top: 0;left: 0;transition-timing-function: linear}
+#videoBox li img{transition:all 0.3s;transition-timing-function: linear;height: auto;}
 
 
-li:nth-child(4){left:50%;margin-left: -400px; z-index:400;margin-top:-15%}
-li:nth-child(4) img{width: 800px;}
-li:nth-child(4)::after{content: " ";display: block; width: 100%;height: 100%;position: absolute;background-color: transparent; transition:all 0.5s; z-index: 350; top: 0;left: 0;}
+#videoBox li:nth-child(1){left: 10%; z-index:100;margin-top:-9%}
+#videoBox li:nth-child(1) img{width: 500px;}
+
+#videoBox li:nth-child(2){left: 0; z-index:200;margin-top:-11%}
+#videoBox li:nth-child(2) img{width: 600px;}
+
+#videoBox li:nth-child(3){left: 10%; z-index:300;margin-top:-13%}
+#videoBox li:nth-child(3) img{width: 700px;}
 
 
-li:nth-child(5){right:10%; z-index:300;margin-top:-13%}
-li:nth-child(5) img{width: 700px;}
+#videoBox li:nth-child(4){left:50%;margin-left: -400px; z-index:400;margin-top:-15%}
+#videoBox li:nth-child(4) img{width: 800px;}
+#videoBox li:nth-child(4) iframe{width: 100%;height: 100%; transition:all 1s;position: absolute;text-align: center; transition:1s; background-repeat: no-repeat; transition: 0.5s;left:50%;margin-left: -400px; z-index:1000;}
+#videoBox li:nth-child(4)::after{content: " ";display: block; width: 100%;height: 100%;position: absolute;background-color: transparent; transition:all 0.5s; z-index: 350; top: 0;left: 0;}
 
 
-li:nth-child(6){right:0; z-index:200;margin-top:-11%}
-li:nth-child(6) img{width: 600px;}
+#videoBox li:nth-child(5){right:10%; z-index:300;margin-top:-13%}
+#videoBox li:nth-child(5) img{width: 700px;}
 
 
-li:nth-child(7){right: 10%; z-index:100;margin-top:-9%}
-li:nth-child(7) img{width: 500px;}
+#videoBox li:nth-child(6){right:0; z-index:200;margin-top:-11%}
+#videoBox li:nth-child(6) img{width: 600px;}
+
+
+#videoBox li:nth-child(7){right: 10%; z-index:100;margin-top:-9%}
+#videoBox li:nth-child(7) img{width: 500px;}
+
+
+/*videoBtn----------------*/
+.play{width: 6rem;height:6rem;position: absolute;z-index: 500; top: 50%;left: 50%; margin-top: -3rem;margin-left: -3rem;}
+.play button{width: 100%;height: 100%;font-size: 5rem;color: #fff;background-color: rgba(0,0,0,0.5);border-radius: 50%}
+
+
+
+.play button:focus, .play button:hover{outline: none;background-color:rgba(200,2,2,0.5); }
+
+
+/*videoNav*/
+
+#videoNav{width: auto;height: 26px;position: absolute;z-index: 100; left: 50%; margin-left: -80px;}
+#videoNav li{width: 0.5rem;height: 0.5rem;margin: 0.5rem; float: left; border-radius: 50%;background-color: #fff;}
+#videoNav li:nth-child(4){background-color: #c22;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
