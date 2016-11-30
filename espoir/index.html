@@ -12,14 +12,21 @@
 		<link rel="stylesheet" href="./css/bin/reset.css">
 		<!--fontawesome-->
 		<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+		<!--flaticon-->
+		<link rel="stylesheet" href="./flat_icon/flaticon.css">
+		<!--header_css-->
+		<link rel="stylesheet" href="./css/src/header.css">
+		<!--footer_css-->
+		<link rel="stylesheet" href="./css/src/footer.css">
 		<!--base_css-->
-		<link rel="stylesheet" href="./css/src/base.css">
+		<link rel="stylesheet" href="./css/src/index/base.css">
 		<!--320~599-->
-		<link rel="stylesheet" href="./css/src/mob.css">
+		<link rel="stylesheet" href="./css/src/index/mob.css">
 		<!--600~1023-->
-		<link rel="stylesheet" href="./css/src/tab.css">
+		<link rel="stylesheet" href="./css/src/index/tab.css">
 		<!--1024~-->
-		<link rel="stylesheet" href="./css/src/pc.css">
+		<link rel="stylesheet" href="./css/src/index/pc.css">
+		
 		
 		
 		
@@ -38,6 +45,7 @@
 	
 	<body>
 		<header id="head_box" class="clearfix" role="banner">
+            <div class="cancle_area"></div>
 			<nav class="unb clearfix">
 				<h1><a href="index.html"><span class="hidden">espoir_logo</span></a></h1>
 				
@@ -49,95 +57,146 @@
 					
 				</h2>
 				
+			
 				<aside class="slide_menu">
-					<ul>
-						<li><a href="#">SHOP</a></li>
-						<li><a href="#">PRO TIP</a></li>
-						<li><a href="#">CHANCE</a></li>
-						<li><a href="#">SERVICE</a></li>
-						<li><a href="#">REVIEW</a></li>
-						<li><a href="#">BRAND</a></li>
-					</ul>
+				
+					
+					    <div class="menu_area">
+					    
+					        <form id="search" class="clearfix" method="get" action="#">
+					                            <input type="text" class="search" name="serach" maxlength="120">
+					                            <button type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+					        </form>
+					        <ul>
+					            <li class="shop"><button type="button">SHOP<i class="fa fa-angle-right" aria-hiddeen="true"></i></button></li>
+					            <li class="protip"><button type="button">PRO TIP<i class="fa fa-angle-right" aria-hiddeen="true"></i></button></li>
+					            <li class="chance"><button type="button">CHANCE<i class="fa fa-angle-right" aria-hiddeen="true"></i></button></li>
+					            <li class="service"><button type="button">SERVICE<i class="fa fa-angle-right" aria-hiddeen="true"></i></button></li>
+					            <li class="review"><button type="button">REVIEW<i class="fa fa-angle-right" aria-hiddeen="true"></i></button></li>
+					            <li class="brand"><button type="button">BRAND<i class="fa fa-angle-right" aria-hiddeen="true"></i></button></li>
+					        </ul>
+					        
+					    
+					    </div>
+					
 				</aside>
 				
 				
-				<h2 class="my"><button type="button">
-					<i class="fa fa-user" aria-hidden="true" style="color:#fff;"></i>
-					<span class="hidden">myinfo</span>
-				</button></h2>
+				<div class="my">
+					<a href="#">
+						<i class="fa fa-user" aria-hidden="true" style="color:#fff;"></i>
+						<span class="hidden">MY</span>
+					</a>
+				</div>
 				
 				
-				<h2 class="cart"><button type="button">
-					<i class="fa fa-shopping-cart" aria-hidden="true" style="color:#fff;"></i>
-					<span class="hidden">cart</span>
-				</button></h2>
+				<div class="cart">
+					<a href="#">
+						<i class="fa fa-shopping-cart" aria-hidden="true" style="color:#fff;"></i>
+						<span class="hidden">CART</span>
+					</a>
+				</div>
+				
 			</nav>
 				
 		</header>
-		
+   
 			
 		<section class="cf_box">
-		<section class="dark"></section>
-		<video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-      	<source src="./espoir_cf.mp4"></video>
+		    <section class="dark"></section>
+		    <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+                <source src="./espoir_cf.mp4"></source>
+      	    </video>
+		    <div class="pause">
+		    	<button type="button"><i class="fa fa-pause-circle-o" aria-hidden="true"></i></button>
+		    </div>
+		    <div class="play">
+		    	<button type="button"><i class="fa fa-play-circle-o" aria-hidden="true"></i></button>
+		    </div>
 		</section>
 	
 		<section id="add_banner">
 			<h2 class="hidden">광고배너영역</h2>
 			
-			<div class="banner_btn left_btn"><button type="button"><i class="fa fa-angle-left" aria-hidden="true"></i><span class="hidden">left</span></button></div>
-			
-			<div class="banner_btn right_btn"><button type="button"><i class="fa fa-angle-right" aria-hiddeen="true"></i><span class="hidden">right</span></button></div>
 			<div id="banner_box">
 				<ul>
-					<li class="banner_01">광고배너_01</li>
-					<li class="banner_02">광고배너_02</li>
-					<li class="banner_03">광고배너_03</li>
-					<li class="banner_04">광고배너_04</li>
+					<li class="banner_01">
+						<span class="hidden">광고배너_01</span>
+					</li>
+					<li class="banner_02">
+						<span class="hidden">광고배너_02</span>
+					
+					</li>
+					<li class="banner_03">
+						<span class="hidden">광고배너_03</span>
+					
+					</li>
+					<li class="banner_04">
+						<span class="hidden">광고배너_04</span>
+					
+					</li>
 				</ul>
-				
 			</div>
+			
+			<ul id="banner_nav">
+				<li class="nav_00"><button><span class="hidden">banner_01</span></button></li>
+				<li class="nav_01"><button><span class="hidden">banner_02</span></button></li>
+				<li class="nav_02"><button><span class="hidden">banner_03</span></button></li>
+				<li class="nav_03"><button><span class="hidden">banner_04</span></button></li>
+				
+			</ul>
+			
 		</section>
 		
 		
 		<article id="item">
+					
+		<div class="banner_btn left_btn"><button type="button"><i class="fa fa-angle-left" aria-hidden="true"></i><span class="hidden">left</span></button></div>
+			
+		<div class="banner_btn right_btn"><button type="button"><i class="fa fa-angle-right" aria-hiddeen="true"></i><span class="hidden">right</span></button></div>
+		
+					
 		</article>
 		
 		
 		<article class="content clearfix">			
 			<ul id="content_01" class="clearfix">
-				<li><div><a href="#">EVERYDAY<br /> MAKEUP</a></div></li>
-				<li><div><a href="#">EYEBROW<br /> BAR</a></div></li>
-				<li><div><a href="#">LAST<br /> CHANCE</a></div></li>
-				<li><div><a href="#">EYEMIX <br />MATCH</a></div></li>
+				<li class="everyday"><div><a href="./everyday.html">EVERYDAY<br /> MAKEUP</a></div></li>
+				<li class="eyebrow"><div><a href="./eyebrow.html">EYEBROW<br /> BAR</a></div></li>
+				<li class="last"><div><a href="./last.html">LAST<br /> CHANCE</a></div></li>
+				<li class="eyemix"><div><a href="#">EYEMIX <br />MATCH</a></div></li>
 			</ul>
 			<ul id="content_02" >
-				<li><div><a href="#">FOUNDATION<br /> FINDER</a></div></li>
-				<li><div><a href="#">COLOR <br />FINDER</a></div></li>
-				<li><div><a href="#">BRUSH <br />FINDER</a></div></li>
+				<li class="foundation"><div><a href="#">FOUNDATION<br /> FINDER</a></div></li>
+				<li class="color"><div><a href="./color.html">COLOR <br />FINDER</a></div></li>
+				<li class="brush"><div><a href="#">BRUSH <br />FINDER</a></div></li>
 			</ul>
 			<ul id="content_03">
-				<li><div><a href="#">BRAND <br />STORY</a></div></li>
-				<li><div><a href="#">STORE</a></div></li>
+				<li class="brand"><div><a href="./brand.html">BRAND <br />STORY</a></div></li>
+				<li class="store"><div><a href="#">STORE</a></div></li>
 			</ul>
 		</article>
 		
 		
-		<footer >
-			<h3>고객상담:080-619-8888  월~금 09:00~18:00(토/일/공휴일 휴무)<br />
-				이메일:espoirmail@espoir.com </h3>
+		<footer>
 			
-			<h4 class="clearfix">
+				<address>고객상담:080-619-8888  월~금 09:00~18:00(토/일/공휴일 휴무)<br />
+					이메일:espoirmail@espoir.com </address>
+			
+			<h3 class="clearfix">
 				<a href="#">서비스이용약관</a>
 				<a href="#">개인정보취급방침</a>
-			</h4>
+			</h3>
 			
 			<address>ⓒ2015 eSporir. All Right Reserved.</address>
 		</footer>
 	
-		<script src="js/src/slide_banner.js"></script>
+	
 		<script src="js/src/slide_best.js"></script>
 		<script src="js/src/slide_menu.js"></script>
+		<script src="js/src/add_banner.js"></script>
+		<script src="js/src/play_bg.js"></script>
+		<script src="js/src/link.js"></script>
 	</body>
 
 </html>

@@ -1,0 +1,14 @@
+/*brand_mob.css*/
+@media screen and (max-width: 37.44rem){
+#brand{width: 100%;height: auto;margin-top: 1.8rem;box-sizing: border-box;padding: 1.5rem 2.6vw;background-color: #000;}
+    #brand h3{display: none;}
+    #brand h2{width: 100%;height: 3rem;font-family: 'Open Sans Condensed', sans-serif;text-align: center;font-size: 1.5rem;line-height: 3rem;margin-bottom: 1rem;}
+    #brand div:nth-of-type(1) img{width: 100%;height: auto;}
+    #brand p{width: 100%;height: auto;color: #fff;text-align: center;}
+    #brand p span:nth-of-type(1){font-size: 0.8rem;}
+    #brand p span:nth-of-type(2){font-size: 1.5rem;font-weight: bold;}
+    #brand p span:nth-of-type(3){font-size:0.9rem; }
+    #brand p span:nth-of-type(4){font-size:0.75rem;font-weight: lighter;opacity: 0.8}
+    
+    /*#brand .aaa{width: 10rem;height: 10rem;background-image: url(../../../img/brand/img_brand1.jpg)}*/
+}
