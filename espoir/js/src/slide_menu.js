@@ -4,69 +4,71 @@ $(function() {
 
 var shop = [
 			{"dt" :"SHOP"},
-			{"dt" : "베스트 신제품"},
+			{"dt" : "베스트 신제품","link":"./best_new.html"},
 			{"dt" : "스킨 케어", "skincare":[
-										{"dd":"클렌저"},
-										{"dd":"데일리케어"},
-										{"dd":"엑스트라케어"},
-										{"dd":"선케어"}]      },
+										{"dd":"클렌저","link":"#"},
+										{"dd":"데일리케어","link":"#"},
+										{"dd":"엑스트라케어","link":"#"},
+										{"dd":"선케어","link":"#"}]
+            },
   
 			{"dt" : "페이스 메이크업" , "facemakeup":[
-										{"dd":"프라이머"},
-										{"dd":"루미나이저"},
-										{"dd":"BB 틴티드"},
-										{"dd":"컨실러"},
-										{"dd":"파운데이션"},
-										{"dd":"파우더"}]      },
+										{"dd":"프라이머","link":"#"},
+										{"dd":"루미나이저","link":"#"},
+										{"dd":"BB 틴티드","link":"#"},
+										{"dd":"컨실러","link":"#"},
+										{"dd":"파운데이션","link":"#"},
+										{"dd":"파우더","link":"#"}]
+            },
 			{"dt" : "아이" , "eye":[
-										{"dd":"아이섀도우"},
-										{"dd":"아이라이너"},
-										{"dd":"아이브라우"},
-										{"dd":"마스카라"},
-										{"dd":"아이 기타"}]   },
-			{"dt" : "치크"},
+										{"dd":"아이섀도우","link":"#"},
+										{"dd":"아이라이너","link":"#"},
+										{"dd":"아이브라우","link":"#"},
+										{"dd":"마스카라","link":"#"},
+										{"dd":"아이 기타","link":"#"}]   },
+			{"dt" : "치크","link":"./shop.html"},
 			{"dt" : "립" , "lip":[
-									{"dd":"립스틱"},
-									{"dd":"립글로즈"},
-									{"dd":"립틴트"},
-									{"dd":"립라이너"},
-									{"dd":"립 기타"}]   },
-			{"dt" : "향수"},
-			{"dt" : "프로 툴"},
-			{"dt" : "스페셜 세트"},
-			{"dt" : "아이 믹스앤매치"},
-			{"dt" : "라스트찬스"}
+									{"dd":"립스틱","link":"#"},
+									{"dd":"립글로즈","link":"#"},
+									{"dd":"립틴트","link":"#"},
+									{"dd":"립라이너","link":"#"},
+									{"dd":"립 기타","link":"#"}]   },
+			{"dt" : "향수","link":"#"},
+			{"dt" : "프로 툴","link":"#"},
+			{"dt" : "스페셜 세트","link":"#"},
+			{"dt" : "아이 믹스앤매치","link":"./eyemix.html"},
+			{"dt" : "라스트찬스","link":"./last.html"}
 		   ];
 var protip = [
 			{"dt" : "PRO TIP"},
-			{"dt" : "에브리데이 메이크업"},
-			{"dt" : "프로메이크업 비디오"},
-			{"dt" : "아티스트 QNA"},
-			{"dt" : "파운데이션 파인더"},
-			{"dt" : "컬러 파인더"},
-			{"dt" : "브러쉬 파인더"}
+			{"dt" : "에브리데이 메이크업","link":"./everyday.html"},
+			{"dt" : "프로메이크업 비디오","link":"#"},
+			{"dt" : "아티스트 QNA","link":"#"},
+			{"dt" : "파운데이션 파인더","link":"#"},
+			{"dt" : "컬러 파인더","link":"./color.html"},
+			{"dt" : "브러쉬 파인더","link":"#"}
 			];
 var chance = [
 			{"dt" : "CHANCE"},
-			{"dt" : "이벤트"},
-			{"dt" : "큐빅스토어"}
+			{"dt" : "이벤트","link":"#"},
+			{"dt" : "큐빅스토어","link":"#"}
 			];
 var service =[
 			{"dt" : "SERVICE"},
-			{"dt" : "메이크업 레슨"},
-			{"dt" : "멤버쉽"},
-			{"dt" : "VVIP라운지"},
-			{"dt" : "아이브로우바"}
+			{"dt" : "메이크업 레슨","link":"#"},
+			{"dt" : "멤버쉽","link":"#"},
+			{"dt" : "VVIP라운지","link":"#"},
+			{"dt" : "아이브로우바","link":"./eyebrow.html"}
 			];
 var brand = [
 			{"dt" : "BRAND"},
-			{"dt" : "뉴 컬렉션"},
-			{"dt" : "브랜드 컨셉"},
-			{"dt" : "브랜드 히스토리"},
-			{"dt" : "아티스트 스튜디오"},
-			{"dt" : "뉴스"},
-			{"dt" : "소셜 에스쁘아"},
-			{"dt" : "매장찾기"}
+			{"dt" : "뉴 컬렉션","link":"#"},
+			{"dt" : "브랜드 컨셉","link":"./brand.html"},
+			{"dt" : "브랜드 히스토리","link":"#"},
+			{"dt" : "아티스트 스튜디오","link":"#"},
+			{"dt" : "뉴스","link":"#"},
+			{"dt" : "소셜 에스쁘아","link":"#"},
+			{"dt" : "매장찾기","link":"#"}
 			];
 
 	
@@ -74,7 +76,8 @@ var brand = [
 var ww = $(window).width();
 var unb = $('.unb');
 var menu = $('.slide_menu');
-	
+
+
 	/*메뉴버튼 누르면 slide_menu가 왼쪽에서부터 슬라이드*/
 	
 	$('.menu button').on('click', function(e) {
@@ -133,7 +136,7 @@ var menu = $('.slide_menu');
 				dl.append('<dt><a href="#">');/*dt생성*/
                 var dt = $('.slide_menu').find('dt');
 				
-				dt.eq(i).find('a').text(shop[i].dt);}
+				dt.eq(i).find('a').text(shop[i].dt).attr({href:shop[i].link});}
 				
 				dt.eq(0).text(shop[0].dt);
 				
@@ -151,20 +154,20 @@ var menu = $('.slide_menu');
 					
 				for(i=0;i<shop[2].skincare.length;i++){
 					dd.eq(0).append('<div><a href="#">');
-				    dd.eq(0).find('a').eq(i).text(shop[2].skincare[i].dd);
+				    dd.eq(0).find('a').eq(i).text(shop[2].skincare[i].dd).attr({href:shop[2].skincare[i].link});
 				}
 				
 				for(i=0;i<shop[3].facemakeup.length;i++){
 				    dd.eq(1).append('<div><a href="#">');
-					dd.eq(1).find('a').eq(i).text(shop[3].facemakeup[i].dd);
+					dd.eq(1).find('a').eq(i).text(shop[3].facemakeup[i].dd).attr({href:shop[3].facemakeup[i].link});
 				}
 				for(i=0;i<shop[4].eye.length;i++){
 					dd.eq(2).append('<div><a href="#">');
-					dd.eq(2).find('a').eq(i).text(shop[4].eye[i].dd);
+					dd.eq(2).find('a').eq(i).text(shop[4].eye[i].dd).attr({href:shop[4].eye[i].link});
 				}
 				for(i=0;i<shop[6].lip.length;i++){
 					dd.eq(3).append('<div><a href="#">');
-					dd.eq(3).find('a').eq(i).text(shop[6].lip[i].dd);
+					dd.eq(3).find('a').eq(i).text(shop[6].lip[i].dd).attr({href:shop[6].lip[i].link});
 				}
 				
 				menu.find('[roll="button"]').on('click',function(){
@@ -182,7 +185,7 @@ var menu = $('.slide_menu');
 				dl.append('<dt><a href="#">');/*dt생성*/
 				var dt = $('.slide_menu').find('dt');
 				
-				dt.eq(i).find('a').text(protip[i].dt);}/*list넣기*/
+				dt.eq(i).find('a').text(protip[i].dt).attr({href:protip[i].link});}/*list넣기*/
                 dt.eq(0).text(protip[0].dt);
 				dl_move();
               break;
@@ -191,7 +194,7 @@ var menu = $('.slide_menu');
 				dl.append('<dt><a href="#">');/*dt생성*/
                 var dt = $('.slide_menu').find('dt');
 				
-                dt.eq(i).find('a').text(chance[i].dt);}	/*list넣기*/
+                dt.eq(i).find('a').text(chance[i].dt).attr({href:chance[i].link});}	/*list넣기*/
 				dt.eq(0).text(chance[0].dt);;
 				dl_move();
               break;
@@ -200,7 +203,7 @@ var menu = $('.slide_menu');
 				dl.append('<dt><a href="#">');/*dt생성*/
                 var dt = $('.slide_menu').find('dt');
                   
-				dt.eq(i).find('a').text(service[i].dt);}	/*list넣기*/
+				dt.eq(i).find('a').text(service[i].dt).attr({href:service[i].link});}	/*list넣기*/
 				dt.eq(0).text(service[0].dt);;
 				dl_move();
              break;
@@ -215,7 +218,7 @@ var menu = $('.slide_menu');
 				dl.append('<dt><a href="#">');/*dt생성*/
                 var dt = $('.slide_menu').find('dt');
 				
-                dt.eq(i).find('a').text(brand[i].dt);}	/*list넣기*/
+                dt.eq(i).find('a').text(brand[i].dt).attr({href:brand[i].link});}	/*list넣기*/
 				dt.eq(0).text(brand[0].dt);;
 				dl_move();
               break; 

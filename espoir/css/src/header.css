@@ -27,6 +27,7 @@ button{background-color: transparent;}
                 .slide_menu ul li{width: 21.88rem;height: 4rem;box-sizing: border-box;line-height: 4rem; text-indent: 1.2rem;border-top: 1px solid #444;}
                 .slide_menu ul li:last-child{border-bottom: 1px solid #444;}
                     .slide_menu ul li button{width: 21.88rem;height: 4rem;line-height: 4rem;color: #fff;text-align: left;font-family: 'Open Sans Condensed', sans-serif;}
+.slide_menu ul li a{width: 21.88rem;height: 4rem;line-height: 4rem;color: #fff;text-align: left;font-family: 'Open Sans Condensed', sans-serif;}
                         .slide_menu ul li i{float: right; margin-right: 4rem;margin-top: 1rem;}
 
             .slide_menu dl{float: right;width: 21.88rem;height: 100vh;background-color: #111;position:absolute;z-index: 10000;top: 0;left: 21.88rem;overflow-y: scroll;overflow-x: hidden;}

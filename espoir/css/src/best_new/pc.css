@@ -9,12 +9,24 @@
         #lnb_big li{width: 10rem;height: inherit;box-sizing: border-box;border-bottom:2px solid #111;/* border-right: 1px solid #fff;*/float: left;font-size: 0.9rem;text-align: center;font-family: 'Open Sans', sans-serif;font-weight: lighter;color: #fff;background-color: #333;line-height: 3rem;}
     #lnb_big .lnb_big_01{background-color: #111;}
         
-            #lnb li button{width: 100%;height: inherit;border-right: 0;color: #fff}
+      
     .info{width: 100%;height: 15rem;margin-bottom: 2rem;background-position: left;color: #fff;font-family: 'Open Sans Condensed', sans-serif;box-sizing: border-box;padding-top: 7rem;}
     
     .info h2{font-size: 7rem;line-height: 6.5rem}
     .info p{color:rgba(255,255,255,0.6); font-family: 'Noto Sans KR', sans-serif;font-weight: lighter;margin-left: 0.5rem}
     
+    
+        #lnb_small{width: 100%;height: 3rem;box-sizing: border-box;border-bottom: 1px solid #000;}
+        #lnb_small li{width:10%;height: inherit;box-sizing: border-box;border-bottom:2px solid #111;/* border-right: 1px solid #fff;*/float: left;font-size: 0.9rem;text-align: center;font-family: 'Open Sans', sans-serif;font-weight: lighter;color: #fff;background-color: #333;line-height: 3rem;}
+    #lnb_small .lnb_small_01{background-color: #111;}
+     #lnb_small li button{width: 100%;height: inherit;border-right: 0;color: #fff}    
+    #lnb_s{display: none} 
+    #align{width:  10rem;float: right;margin:1rem 0;}
+    
+    #item{width: 100%;height: auto;}
+    content div{width: 100%;height: 28rem;background-color: #555;box-sizing: border-box;border: 1px solid #f20;}
+    #item ul{width: calc(100% / 5);padding: 1rem 1.6666vw;}
+    .popup{width: 30rem;height:35rem;top: 50%;left: 50%; margin-top:-17.5rem;margin-left: -15rem}
         /*content div{box-sizing: border-box;}
     .eyebrow_bar div:first-child{height: 40rem;background-image: url(../../../img/eyebrow/eyebrow_img_01.jpg)}
 .eyebrow_bar div:nth-child(2){height: 40rem;background-image: url(../../../img/eyebrow/eyebrow_img_02.jpg)}
